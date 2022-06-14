@@ -38,6 +38,8 @@ RUN git clone https://github.com/yamtargokboru/YukkiMusicBot
 
 RUN cd YukkiMusicBot
 
+WORKDIR ./
+
 RUN cp .env ../YukkiMusicBot/.env
 
 RUN cd YukkiMusicBot
