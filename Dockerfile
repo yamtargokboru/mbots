@@ -34,9 +34,9 @@ RUN curl -fssL https://deb.nodesource.com/setup_17.x | sudo -E bash - && sudo ap
 
 RUN git clone https://github.com/notreallyshikhar/YukkiMusicBot
 
-RUN git clone https://github.com/yamtargokboru/YukkiMusicBot
+RUN git clone https://github.com/yamtargokboru/mbots
 
-RUN cd YukkiMusicBot
+RUN cd mbots
 
 WORKDIR ./
 
