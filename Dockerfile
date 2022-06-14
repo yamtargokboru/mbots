@@ -28,22 +28,22 @@ RUN apt-get update && apt-get install -y \
 
     python3-pip
 
-RUN apt-get install -y ffmpeg
-
-RUN curl -fssL https://deb.nodesource.com/setup_17.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm
-
 RUN git clone https://github.com/notreallyshikhar/YukkiMusicBot
 
 RUN git clone https://github.com/yamtargokboru/mbots
 
 RUN cd mbots
 
-WORKDIR ./
-
 RUN cp .env ../YukkiMusicBot/.env
 
+RUN cd
+
 RUN cd YukkiMusicBot
+
+WORKDIR ./
 
 RUN pip3 install -U -r requirements.txt
 
 CMD ["bash", "start"]
+
+
